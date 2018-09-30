@@ -1,0 +1,9 @@
+From pitch day, I know there are a lot of you who'd like to work at Reddit. But even if you don't do your practicum there, you can still work with a lot of their text data. I'm going to show you how to get started with the Python Reddit API Wrapper (or praw for short), which is a package that hides a lot of the complexity of dealing with the full API. 
+
+In Data Acquisition, we've been using Tweepy to get Twitter data, and praw is basically the equivalent for Reddit. To get full access to the API's functionality, you'll have to register for an account (it's free and there's no approval process). You can create an app at this link. It's pretty self-explanatory so I won't go over this in detail right now. Just remember that for most basic tasks, you're going to want to select the 'script' type. You'll need to provide a redirect url, I just put in a link to my github. Once you create your app, you'll get a client id and a client secret id. I'd recomment storing these in a text file along with your username and password so they aren't hardcoded into your program.
+
+Now just pip install praw and you're ready to begin.
+
+I'm going to import a few other packages just for demo purposes, but they're not necessary for the basics.
+
+This creates a Reddit instance. We can use this to access subreddits, posts, comments, users, and more.
